@@ -1,0 +1,75 @@
+test@gmail.com
+11aabbCC*&767888wes576576
+
+
+
+Get security token 
+    localhost:8080/api/accounts/security/token
+    {
+    "email": "test@gmail.com",
+    "password": "11aabbCC*&767888wes576576"
+    }
+    
+
+
+{
+    "firstName": "Min2andMax30",
+    "lastName": "Min2andMax30",
+    "email": "test@gmail.com",
+    "password": "11aabbCC*&767888wes576576"
+}
+
+
+
+{
+    "firstName": "Study",
+    "lastName": "Timee",
+    "email": "test@gmail.com",
+    "password": "test"
+}
+
+
+{
+    "movieId":675353
+}
+
+
+
+POST
+localhost:8080/api/accounts/
+
+{
+    "firstName": "Study",
+    "lastName": "Timee",
+    "email": "test@gmail.com",
+    "password": "test"
+}
+
+
+GET
+localhost:8080/api/accounts/
+
+[
+    {
+        "id": "6251b208af2dc9190d38dcd7",
+        "firstName": "Study",
+        "lastName": "Timee",
+        "email": "test@gmail.com",
+        "password": "test"
+    }
+]
+
+
+POST 
+localhost:8080/api/accounts/6251b208af2dc9190d38dcd7/favourites
+{
+    "movieId":675353
+
+}
+
+
+post
+localhost:8080/api/accounts/6251afeb7c07fb2cfcf82fea/favourites
+{
+    "movieId":675353
+}
