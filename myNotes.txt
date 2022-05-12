@@ -10,7 +10,14 @@ Get security token
     "password": "11aabbCC*&767888wes576576"
     }
     
+    pm.collectionVariables.set("email", pm.variables.replaceIn('{{$randomEmail}}'))
 
+    {
+    "firstName": "{{firstName}}",
+    "lastName": "{{lastName}}",
+    "email": "{{email}}",
+    "password": "{{password}}"
+    }
 
 {
     "firstName": "Min2andMax30",
